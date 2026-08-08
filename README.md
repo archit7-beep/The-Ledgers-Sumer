@@ -31,8 +31,8 @@ You will need Node.js installed and accounts for Supabase and Groq.
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/archit7-beep/temp__01.git
-cd temp__01
+git clone https://github.com/archit7-beep/The-Ledgers-Sumer.git
+cd The-Ledgers-Sumer
 npm install
 ```
 
@@ -66,7 +66,13 @@ This project is structured as a standard Next.js monolithic SaaS application.
 3. Connect your GitHub repository.
 4. Netlify will automatically detect Next.js and set the build command to `npm run build` and output directory to `.next`.
 5. Add your Environment Variables (`NEXT_PUBLIC_SUPABASE_URL`, etc.) in the Netlify dashboard.
-6. Click **Deploy**!
+6. **Crucial:** Netlify's secret scanner may falsely flag the `GROQ_API_KEY` hidden in the Next.js build cache. To prevent your build from failing, add `SECRETS_SCAN_OMIT_KEYS` with the value `NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY,GROQ_API_KEY` to your Netlify Environment Variables.
+7. Click **Deploy**!
 
 ---
-*Built with ❤️ for the Hackathon.*
+
+<div align="center">
+  <h3>Built with ❤️ for the Hackathon</h3>
+  <p>by</p>
+  <h2>✨ <strong>Team Temp__01</strong> ✨</h2>
+</div>
